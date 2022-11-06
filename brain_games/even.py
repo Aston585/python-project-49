@@ -3,6 +3,7 @@ from random import randint
 
 
 def welcome_user():
+    print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
 
@@ -11,7 +12,7 @@ def rules_of_the_game():
     print(f"Answer 'yes' if the number is even, otherwise answer 'no'")
 
 
-def even_games():
+def even_game():
     count_right_answer = 0
     while count_right_answer < 3:
         number = randint(0, 100) #The range of random numbers will be from 0 to 100
