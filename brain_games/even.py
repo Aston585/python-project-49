@@ -24,7 +24,8 @@ def even_game():
                 print(f"""'yes' is wrong answer ;(. Correct answer was 'no'.
 Let's try again, {name}!""")
                 break
-        elif print("Answer 'yes' if the number is even, otherwise answer 'no'"):
+        else:
+            print("Answer 'yes' if the number is even, otherwise answer 'no'")
             break
     if count_right_answer == 3:
         print(f"Congratulations, {name}!")
