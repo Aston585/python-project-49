@@ -13,7 +13,7 @@ def even_game():
         number = randint(0, 100)
         print(f"Questions: {number}")
         answer_user = prompt.string('Your answer: ')
-        if answer_user == str('yes') or str('no'):
+        if answer_user in ('yes', 'no'):
             if number % 2 == 0 and answer_user == str('yes'):
                 print('Correct!')
                 count_right_answer += 1
@@ -21,7 +21,7 @@ def even_game():
                 print('Correct!')
                 count_right_answer += 1
             else:
-                print(f"""'yes' is wrong answer ;(. Correct answer was 'no'.
+                print(f"""'{answer_user}' is wrong answer ;(
 Let's try again, {name}!""")
                 break
         else:
