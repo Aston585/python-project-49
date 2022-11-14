@@ -11,18 +11,20 @@ def calc_game():
         # The range of random numbers will be from 0 to 10
         number_first = random.randint(0, 10)
         number_second = random.randint(0, 10)
-        operator = ('+', '-', '*')
-        expression = f"{number_first} {random.choice(operator)} {number_second}"
+        operators = ('+', '-', '*')
+        random_operator = random.choice(operators)
+        expression = f"{number_first} {random_operator} {number_second}"
         print("What is the result of the expression?")
         print(f"Question: {expression}")
         answer_user = prompt.string('Your answer: ')
-        if operator == '+':
+        result = 0
+        if random_operator in '+':
             result = number_first + number_second
-        elif operator == '-':
+        elif random_operator in '-':
             result = number_first - number_second
-        elif operator == '*':
+        elif random_operator in '*':
             result = number_first * number_second
-        if answer_user == result:
+        if answer_user == str(result):
             print('Correct!')
             count_right_answer += 1
         else:
