@@ -13,6 +13,8 @@ lint:
 brain-even:
 	poetry run brain-even
 brain-calc:
-	poetry run brain-calc	
+	poetry run brain-calc
+brain-gcd:
+	poetry run brain-gcd	
 package-uninstall:
 	python3 -m pip uninstall dist/*.whl
