@@ -15,6 +15,8 @@ brain-even:
 brain-calc:
 	poetry run brain-calc
 brain-gcd:
-	poetry run brain-gcd	
+	poetry run brain-gcd
+brain-progression:
+	poetry run brain-progression	
 package-uninstall:
 	python3 -m pip uninstall dist/*.whl
