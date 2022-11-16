@@ -12,7 +12,7 @@ def prime_game():
     while count_right_answer < 3:
         number = randint(2, 100)
         # The range of random numbers will be from 0 to 100
-        print(f"Questions: {number}")
+        print(f"Question: {number}")
         answer_user = prompt.string('Your answer: ')
         if answer_user in ('yes', 'no'):
             def is_prime(number):
