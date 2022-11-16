@@ -20,3 +20,5 @@ brain-progression:
 	poetry run brain-progression	
 package-uninstall:
 	python3 -m pip uninstall dist/*.whl
+brain-prime:
+	poetry run brain-prime
