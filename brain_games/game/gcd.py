@@ -21,7 +21,7 @@ def gcd_game():
             print('Correct!')
             count_right_answer += 1
         else:
-            print(f"'{answer_user}' is wrong answer ;(. Correct answer" 
+            print(f"'{answer_user}' is wrong answer ;(. Correct answer"
                   f"was '{result}'\nLet's try again, {name}!")
             break
         if count_right_answer == 3:

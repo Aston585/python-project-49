@@ -15,11 +15,6 @@ def prime_game():
         print(f"Question: {number}")
         answer_user = prompt.string('Your answer: ')
         if answer_user in ('yes', 'no'):
-            def is_prime(number):
-                for i in range(2, int(math.sqrt(number)) + 1):
-                    if number % i == 0:
-                        return False
-                return True
             if is_prime(number) and answer_user == str('yes'):
                 print('Correct!')
                 count_right_answer += 1
@@ -27,7 +22,7 @@ def prime_game():
                 print('Correct!')
                 count_right_answer += 1
             else:
-                print(f"'{answer_user}' is wrong answer ;(\nLet's try " 
+                print(f"'{answer_user}' is wrong answer ;(\nLet's try "
                       f"again, {name}!")
                 break
         else:
@@ -35,3 +30,10 @@ def prime_game():
             break
     if count_right_answer == 3:
         print(f"Congratulations, {name}!")
+
+
+def is_prime(number):
+    for i in range(2, int(math.sqrt(number)) + 1):
+        if number % i == 0:
+            return False
+    return True
