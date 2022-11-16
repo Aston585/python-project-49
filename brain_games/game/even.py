@@ -11,7 +11,7 @@ def even_game():
     while count_right_answer < 3:
         # The range of random numbers will be from 0 to 100
         number = randint(0, 100)
-        print(f"Questions: {number}")
+        print(f"Question: {number}")
         answer_user = prompt.string('Your answer: ')
         if answer_user in ('yes', 'no'):
             if number % 2 == 0 and answer_user == str('yes'):
