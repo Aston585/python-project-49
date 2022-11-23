@@ -1,5 +1,10 @@
 # BRAIN GAMES
 
+### Hexlet tests and linter status:
+
+[![Actions Status](https://github.com/Aston585/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Aston585/python-project-49/actions)
+<a href="https://codeclimate.com/github/Aston585/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/54757df8be7df3307d01/maintainability" /></a>
+
 ## Brief description of the project
 
 BRAIN GAMES is a set of five console games built using popular mobile brain training apps. Each game asks questions that need to be answered. After three correct answers, the game is considered to be completed. Incorrect results end the game and return it again.
@@ -67,10 +72,3 @@ $ make name-of-the-game
 "Greatest Common Divisor" - brain-gcd  
 "Arithmetic progression" - brain-progression  
 "Is it a prime number" - brain-prime
-
----
-
-#### Hexlet tests and linter status:
-
-[![Actions Status](https://github.com/Aston585/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Aston585/python-project-49/actions)
-<a href="https://codeclimate.com/github/Aston585/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/54757df8be7df3307d01/maintainability" /></a>
