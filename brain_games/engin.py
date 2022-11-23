@@ -1,14 +1,14 @@
 import prompt
 
 
-def game_engin(rules, game):
+def game_engin(games):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
     count_right_answer = 0
-    print(rules)
+    print(games.RULES)
     while count_right_answer < 3:
-        question, correct_answer = game()
+        question, correct_answer = games.game()
         print(f"Question: {question}")
         answer_user = prompt.string('Your answer: ')
         if answer_user.lower() in correct_answer:
