@@ -3,7 +3,7 @@ import random
 RULES = "What number is missing in the progression?"
 
 
-def game():
+def create_game_data():
     # Formation of a random progression:
     len_progression = random.randint(5, 10)
     step = random.randint(1, 10)

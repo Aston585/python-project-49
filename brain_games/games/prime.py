@@ -4,18 +4,17 @@ import math
 RULES = """Answer "yes" if given number is prime. Otherwise answer "no"."""
 
 
-def is_prime():
-    number = randint(2, 100)
-    for i in range(2, int(math.sqrt(number)) + 1):
+def is_prime(number):
+    for i in range(2, int(math.sqrt(number) + 1)):
         if number % i == 0:
-            return False, number
+            return False
     else:
-        return True, number
+        return True
 
 
-def game():
-    answer, number = is_prime()
-    if not answer:
+def create_game_data():
+    number = randint(2, 100)
+    if not is_prime(number):
         correct_answer = 'no'
     else:
         correct_answer = 'yes'
