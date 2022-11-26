@@ -1,13 +1,14 @@
 import prompt
 
 
-def play_game(game_data):
+def play(game):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
-    print(game_data.RULES)
-    for _ in range(3):
-        question, correct_answer = game_data.create_game_data()
+    print(game.RULES)
+    ROUNDS = 3
+    for _ in range(ROUNDS):
+        question, correct_answer = game.create_game_data()
         print(f"Question: {question}")
         answer_user = prompt.string('Your answer: ')
         if answer_user.lower() in correct_answer:
